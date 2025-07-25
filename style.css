@@ -1,0 +1,147 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #41094a;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 5%;
+  background-color: transparent;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  color: #cbd5e1;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+/* Hero section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 5%;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.hero-text h1 span {
+  color: #c60d85;
+}
+
+.hero-text h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #c60d85;
+  margin-bottom: 1rem;
+}
+
+#role {
+  transition: opacity 0.4s ease-in-out;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  color: #94a3b8;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn.primary {
+  background-color: #bf1858;
+  color: #0f172a;
+}
+
+.btn.secondary {
+  border: 2px solid #bf1858;
+  color: #000000;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.social-icons a {
+  margin-right: 1rem;
+  display: inline-block;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1);
+}
+
+/* Hero Image */
+.hero-image img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+/* Responsive */
+@media (max-width: 960px) 
+  {
+.hero {
+    flex-direction: column;
+    align-items:backdrop;
+  }}

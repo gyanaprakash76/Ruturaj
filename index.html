@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ruturaj | Digital Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">Ruturaj.</div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Education</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Hi, I'm <span>Ruturaj Pradhan</span></h1>
+        <h2><span id="role"></span></h2>
+        <p>I'm a one-person creative studio, passionate about telling powerful stories through both visuals and words. With a blend of technical skill and artistic vision, I offer a full spectrum of services—from photography and video production to cinematic film direction and script development.
+
+Every project I take on is more than just a job—it's a collaboration. Whether I’m capturing the fleeting beauty of a candid moment, filming a branded short, or writing a script from scratch, I pour my creativity and attention into every detail. I believe in storytelling that resonates—stories that not only look beautiful but leave a lasting emotional impact.
+
+Photography lets me freeze time and capture the essence of a moment.
+Videography allows me to bring movement, mood, and rhythm into visual storytelling.
+Filmography gives me the space to think bigger—conceptualizing, directing, and editing cinematic experiences.
+And scriptwriting is where it all begins: crafting the narrative foundation that drives every great story.
+
+Whether you're a brand looking for authentic content, an artist with a vision to share, a couple seeking to preserve a once-in-a-lifetime memory, or a fellow creative in need of a trusted collaborator—I’m here to bring your ideas to life with care, clarity, and creativity.</p>
+        <div class="cta-buttons">
+          <a href="#" class="btn primary">Hire Me</a>
+          <a href="#" class="btn secondary">Let's Talk</a>
+        </div>
+       <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="22.jpg" alt="Jacob Aiden" />
+      </div>
+    </section>
+  </header>
+
+  <!-- JavaScript to rotate job titles -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const roles = ["Photography", "Videography", "Video Editing", "Filmography"];
+      let i = 0;
+      const roleElement = document.getElementById("role");
+
+      function rotateRole() {
+        roleElement.style.opacity = 0;
+
+        setTimeout(() => {
+          roleElement.textContent = roles[i];
+          roleElement.style.opacity = 1;
+          i = (i + 1) % roles.length;
+        }, 200); // fade out delay
+      }
+
+      rotateRole();
+      setInterval(rotateRole, 2500);
+    });
+  </script>
+
+</body>
+</html>
